@@ -1,8 +1,9 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h> /* Missing header for printf */
-/** main - Entry point
-  *
+/**
+ * main - Entry point
+ *
  * Description: Generates a random number and determines if it's
  * positive, negative, or zero.
  *
