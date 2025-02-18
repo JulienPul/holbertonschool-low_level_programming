@@ -4,7 +4,7 @@
 /**
  * main - Entry point
  *
- * Description: Generates a random number 
+ * Description: Generates a random number
  *
  * Return: Always 0 (Success)
  */
@@ -27,4 +27,3 @@ printf("Last digit of %d is %d and is less than 6 and not 0\n", n, n % 10);
 }
 return (0);
 }
-
