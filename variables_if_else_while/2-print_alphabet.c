@@ -1,13 +1,14 @@
 #include <stdio.h>
 
 int main(void)
-char = 'a', char <= 'z'
 {
-{
+	{
+	char ch;
+
+for (ch = 'a'; ch <= 'z'; ch++)
+
 	putchar(ch);
-}
-{
-	 putchar('\n'); // saut de ligne
-}
-return 0;
+	}
+       	putchar('\n');
+	return 0;
 }
