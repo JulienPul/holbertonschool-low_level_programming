@@ -1,8 +1,11 @@
 #include <stdio.h>
 
 int main(void)
-/**main:description of th project*/
-
+/**
+ * main - Entry point
+ *
+ * Description: a a z
+ */
 {
 	{
 	char ch;
@@ -10,7 +13,7 @@ int main(void)
 for (ch = 'a'; ch <= 'z'; ch++) /** loop a a z */
 	putchar(ch);
 	}
-	putchar('\n'); /**retour ligne*/
+	putchar('\n'); /**geeghhgerejr*/
 
 	return (0);
 }
