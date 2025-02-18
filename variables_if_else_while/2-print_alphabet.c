@@ -1,6 +1,4 @@
-#include <stdio.h>
-
-int main(void)
+#include <stdio.>
 /**
  * main - Prints the alphabet in lowercase
  *
@@ -10,6 +8,7 @@ int main(void)
  *
  * Return: Always 0 (Success)
  */
+int main(void)
 {
 	{
 	char ch;
