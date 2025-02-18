@@ -17,7 +17,7 @@ int main(void)
 		putchar(ch);
 	}
 	
-	for ch = 'A' ; ch <= 'Z'; ch++ /**loopA aZ */
+	for (ch = 'A' ; ch <= 'Z'; ch++) /**loopA aZ */
 	{	putchar(ch);
 	}
 	putchar('\n'); /**geeghhgerejr*/
