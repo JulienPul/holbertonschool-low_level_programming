@@ -10,10 +10,10 @@
  */
 int main(void)
 {
-	{
 	char ch;
 
 for (ch = 'a'; ch <= 'z'; ch++) /** loop a a z */
+{
 	putchar(ch);
 	}
 	putchar('\n'); /**geeghhgerejr*/
