@@ -12,15 +12,14 @@ int main(void)
 {
 	char ch;
 
-	for (ch = 'a'; ch <= 'z'; ch++) /** loop a a z */
+	for (ch = '0'; ch <= '9'; ch++) /** loop a a z */
 	{
 		putchar(ch);
 	}
-	for (ch = '0'; ch <='9'; ch++)
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
 		putchar(ch);
 	}
 	putchar('\n'); /**geeghhgerejr*/
-
 	return (0);
 }
