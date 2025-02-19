@@ -1,28 +1,29 @@
 #include <stdio.h>
+
 /**
- * main -  prints all possible combinations of single-digit numbers.
- * Numbers must be separated by ,, followed by a space
- * Numbers should be printed in ascending order
- * You can only use the putchar function
- * You can only use putchar four times maximum in your code
+ * main - Prints all possible combinations of single-digit numbers.
+ *
+ * Description: Numbers are separated by ", " and printed in ascending order.
+ * The program only uses putchar and does not exceed four calls.
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	{
-	int ch;
-	
-		{
-	for (ch = '0'; ch <= '9'; ch++)
-		{
-			putchar(ch);
-				if (ch != '9')
-		}
-	}
-	{
-		putchar(',');
-		putchar(' ');
-	}
-	}
-		putchar('\n');
-	return (0);
+    int ch;
+
+    for (ch = '0'; ch <= '9'; ch++) /* Boucle de '0' à '9' */
+    {
+        putchar(ch); /* Affiche le chiffre */
+
+        if (ch != '9') /* Si ce n'est pas le dernier chiffre, ajoute ", " */
+        {
+            putchar(',');
+            putchar(' ');
+        }
+    }
+
+    putchar('\n'); /* Nouvelle ligne */
+    return (0);
 }
+
