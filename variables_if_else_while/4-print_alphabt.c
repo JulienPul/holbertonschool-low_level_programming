@@ -12,14 +12,13 @@ int main(void)
 {
 	char ch;
 
-	for (ch = 'a'; ch <= 'z'; ch++) /** loop a a z */
+	for (ch = 'a'; ch <= 'z'; ch++)
+		if (ch != 'q' && ch != 'e')
 	{
 		putchar(ch);
 	}
-	if (ch !'q' && ch !'e'); /**exclusion q et e */
 	{
-1	putchar('\n'); /**geeghhgerejr*/
+		putchar('\n');
 	}
-
 	return (0);
 }
