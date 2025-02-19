@@ -12,7 +12,7 @@ int main(void)
 {
 	int ch;
 
-	for (ch = 'a'; ch <= 'z'; ch--) /** loop a a z */
+	for (ch = 'z'; ch >= 'a'; ch--) /** loop a a z */
 	{
 		putchar(ch);
 	}
