@@ -16,7 +16,6 @@ int main(void)
 	{
 		putchar(ch);
 	}
-	
 	for (ch = 'A' ; ch <= 'Z'; ch++) /**loopA aZ */
 	{	putchar(ch);
 	}
