@@ -1,10 +1,9 @@
 #include <stdio.h>
-/**dgdgeggejgfdhegfejdej
- *
+/**dgdge ggej gfdh egfejdej
  * bdbjdebdj*/
 int main(void)
 {
-	{	putchar(ch)
+	{
 		putchar('_');
 		putchar('p');
 		putchar('u');
@@ -16,4 +15,4 @@ int main(void)
 	}
 	putchar('\n');
 	return (0);
-	
+}
