@@ -1,24 +1,17 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * int is_lower - Prints the alphabet in lowercase x10
- * Description : This program uses a for loop to print
- * all lowercase letters from 'a' to 'z', followed by
- * a new line.
- * Return : Always 0 (Success)
+ * _islower - Prints the alphabet in lowercase x10
+ * Description : Write a function that checks for lowercase character.
+ * @c: ejieheehuheuheu
+ * Return : Always 0 otherwise
  */
-int _islower(int c);
-char ch;
-{
-	{
-	if (islower(ch)) 
-	
-		_putchar("%c 1\n", ch);
-	}
-	{
-	else {
-		_putchar("%c 0\n", ch);
-	}
+int _islower(int c)
 
-    return 0;
+{	
+	if (c >= 'a' && c <= 'z')
+	{
+	return (1);
+	}
+	return 0;
 }
