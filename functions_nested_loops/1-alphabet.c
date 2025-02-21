@@ -1,6 +1,7 @@
+#include <stdio.h>
 #include "main.h"
 /**
- * main - Prints the alphabet in lowercase
+ *print_alphabet - Prints the alphabet in lowercase
  *
  * Description: This program uses a for loop to print
  * all lowercase letters from 'a' to 'z', followed by
@@ -11,7 +12,6 @@
 void print_alphabet(void)
 {
 	char (ch);
-	
 	for (ch = 'a'; ch <= 'z'; ch++) /** loop a a z */
 	{
 		_putchar(ch);
