@@ -14,10 +14,11 @@ void print_alphabet_x10(void)
 
 	for (i = 0; i < 10; i++)
 	{
-	for (ch = 'a'; ch <= 'z'; ch++) /** loop a a z */
 		{
+	for (ch = 'a'; ch <= 'z'; ch++) /** loop a a z */
 		_putchar(ch);
 		}
+		_putchar('\n'); /**geeghhgerejr*/
 	}
-	_putchar('\n'); /**geeghhgerejr*/
+	
 }
