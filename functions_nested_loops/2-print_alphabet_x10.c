@@ -2,14 +2,12 @@
 #include "main.h"
 /**
  * print_alphabet_x10 - Prints the alphabet in lowercase x10
- *
- * Description: This program uses a for loop to print
+ * Description : This program uses a for loop to print
  * all lowercase letters from 'a' to 'z', followed by
  * a new line.
- *
- * Return: Always 0 (Success)
+ * Return : Always 0 (Success)
  */
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
 	char (ch);
 	char i;
