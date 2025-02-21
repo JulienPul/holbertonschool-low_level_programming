@@ -8,7 +8,7 @@
  *
  * Return: Always 0 (Success)
  */
-int main(void)
+void print_alphabet(void)
 {
 	char (ch);
 	
@@ -17,6 +17,4 @@ int main(void)
 		_putchar(ch);
 	}
 	_putchar('\n'); /**geeghhgerejr*/
-
-	return (0);
 }
