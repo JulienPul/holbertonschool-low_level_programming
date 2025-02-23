@@ -1,6 +1,6 @@
 #include "main.h"
 /*
- * 24_hours: prints every minute of the day, start 00:00 to 23:59.
+ * jack_baue: prints every minute of the day, start 00:00 to 23:59.
  * Description: jack bauer
  *
  * Return: (0)
