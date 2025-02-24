@@ -1,10 +1,9 @@
 #include "main.h"
 /**
  * more_numbers - dkojfjf
- * Description: jhjghgf
- * @n: ,rkfjkrkh
- * @i: dklkjfhguf
- * Return: 0
+  * Description: This function prints the numbers from 0 to 14,
+ * followed by a new line, ten times. It only uses `_putchar`
+ * to print characters.
  */
 void more_numbers(void)
 {
