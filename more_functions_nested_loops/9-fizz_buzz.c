@@ -1,10 +1,9 @@
 #include<stdio.h>
 #include "main.h"
 /**
- * fizz_buzz - prints the numbers from 1 to 100, followed by a new line.
+ * main - prints the numbers from 1 to 100, followed by a new line.
  * Description: or multiples of three print Fizz instead of the numbe
  * For numbers which are multiples of both three and five print FizzBuzz.
- *
  * Return: 0 or value
  */
 int main(void)
