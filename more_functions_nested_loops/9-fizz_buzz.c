@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * fizz_buzz - prints the numbers from 1 to 100, followed by a new line.
- * Description: or multiples of three print Fizz instead of the number and for the multiples of five print Buzz
+ * Description: or multiples of three print Fizz instead of the numbe
  * For numbers which are multiples of both three and five print FizzBuzz.
  *
  * Return: 0 or value
@@ -12,20 +12,19 @@ int main(void)
 	int n;
 
 	for (n = 1; n <= 100; n++)
-		
+
 	{
 		if (n % 3 == 0 && n % 5 == 0)
 		{
 			printf("FizzBuzz");
-		
 		}
 		else if (n % 3 == 0)
 		{
-				printf("Fizz");
+			printf("Fizz");
 		}
 		else if (n % 5 == 0)
 		{
-				printf("Buzz");
+			printf("Buzz");
 		}
 		else
 		{
@@ -33,10 +32,9 @@ int main(void)
 		}
 		if (n < 100)
 		{
-				printf(" ");
+			printf(" ");
 		}
 	}
 			printf("\n");
-			return 0;
+			return (0);
 }
-
