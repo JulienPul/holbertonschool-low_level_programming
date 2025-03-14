@@ -1,19 +1,31 @@
 #ifndef DOG_H
 #define DOG_H
-
+#include <stdio.h>
 /**
- * dog_t - new name struct dog
- * @struct dog: Structure représentant un chien
+ * struct dog - Structure représentant un chien
  * @name: Nom du chien (chaîne de caractères)
  * @age: Âge du chien (flottant)
  * @owner: Propriétaire du chien (chaîne de caract�s)
  */
-typedef struct dog
+struct dog
 {
 	char *name;
 	float age;
 	char *owner;
-}dog_t;
+};
+/**
+ * dog_t - new name for the type struct dog.
+ * @name: Nom du chien (chaîne de caractères)
+ * @age: ~Bge du chien (flottant)
+ * @owner: Propriétaire du chie
+ */
+
+typedef struct dog_t
+{
+	char *name;
+	float age;
+	char *owner;}dog_t;
+
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 #endif
