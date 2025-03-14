@@ -18,13 +18,9 @@ void print_dog(struct dog *d);
 /**
  * dog_t - new name for the type struct dog.
  * @name: Nom du chien (chaîne de caractères)
- * @age: ~Bge du chien (flottant)
+ * @age: age du chien (flottant)
  * @owner: Propriétaire du chie
  */
 
-typedef struct dog
-{
-	char *name;
-	float age;
-	char *owner;}dog_t;
+typedef struct dog dog_t;
 #endif
