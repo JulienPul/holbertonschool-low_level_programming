@@ -20,7 +20,7 @@ struct dog
  * @owner: Propriétaire du chie
  */
 
-typedef struct dog_t
+typedef struct dog
 {
 	char *name;
 	float age;
