@@ -1,10 +1,11 @@
 #include "function_pointers.h"
 #include <stddef.h>
 /**
- * function that searches for an integer.
+ * int_index - function that searches for an integer.
  * @array: tableau d'entier
  * @size: taille tableau
- * cmp: pointeur vers fonction
+ * @cmp: pointeur vers fonction
+ * Return: -1 if no match or cmp,array,size =0 ,return i
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
