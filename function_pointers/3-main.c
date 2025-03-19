@@ -3,14 +3,14 @@
 #include <stdlib.h>
 /**
  * main - prog op arythmetique
- * @argd: nb args
+ * @argc: nb args
  * @argv: tableau arg chaine de c
  * Return: 0si ok 98 99 100 si fail
  */
 int main(int argc, char *argv[])
 {
 	int num1, num2, result;
-	int (*operation(int, int);
+	int (*operation)(int, int);
 
 	if (argc != 4)
 	{
