@@ -1,42 +1,55 @@
 #include "variadic_functions.h"
-#include <stdio.h>
-#include <stdarg.h>
 
 /**
- * print_all - Imprime différents types selon la chaîne format
- * @format: Chaîne spécifiant les types des arguments
- * print_char - char
- * print_int - int
- * print_float - float
- * print_string - string
- * @args: args
+ * print_char - Prints a char
+ * @args: The argument list
  */
 void print_char(va_list args)
 {
 	printf("%c", va_arg(args, int));
 }
-
+/**
+ * print_int - Prints an integer
+ * @args: The argument list
+ */
 void print_int(va_list args)
 {
 	printf("%d", va_arg(args, int));
 }
-
+/**
+ * print_float - Prints a float
+ * @args: The argument list
+ */
 void print_float(va_list args)
 {
 	printf("%f", va_arg(args, double));
 }
-
+/**
+ * print_string - Prints a string
+ * @args: The argument list
+ */
 void print_string(va_list args)
 {
 	char *str = va_arg(args, char *);
-	if (str == NULL)
-		printf("(nil)");
-	else
-		printf("%s", str);
+
+	printf("%s", str ? str : "(nil)");
 }
-
-
+/**
+ * print_all - Prints anything based on the format provided
+ * @format: A list of types of arguments
+ *
+ * Description:
+ * This function takes a variable number of arguments and
+ * prints them based on the given format. The allowed format specifiers are:
+ *  - 'c' for char
+ *  - 'i' for integer
+ *  - 'f' for float
+ *  - 's' for string (if NULL, prints "(nil)")
+ * The function iterates through the format string and calls the corresponding
+ * print function from an array of structures. Values are separated by ", ".
+ */
 void print_all(const char * const format, ...)
+
 {
 	format_t formats[] = {
 		{'c', print_char},
@@ -48,25 +61,28 @@ void print_all(const char * const format, ...)
 
 	va_list args;
 	int i = 0, j;
-	char *separator = "";
+	const char *separator = "";
 
 	va_start(args, format);
 
-	while (format && format[i] != '\0')
+	if (format)
 	{
-		j = 0;
-		while (formats[j].type != '\0')
+		while (format[i])
 		{
-			if (format[i] == formats[j].type)
+			j = 0;
+			while (formats[j].type)
 			{
-				printf("%s", separator);
-				formats[j].print(args);
-				separator = ", ";
-				break;
+				if (format[i] == formats[j].type)
+				{
+					printf("%s", separator);
+					formats[j].print(args);
+					separator = ", ";
+					break;
+				}
+				j++;
 			}
-			j++;
+			i++;
 		}
-		i++;
 	}
 
 	printf("\n");
