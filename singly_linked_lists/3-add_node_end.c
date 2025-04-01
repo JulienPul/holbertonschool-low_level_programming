@@ -17,8 +17,9 @@ int _strlen(const char *s)
 	return (len);
 }
 /**
- * add_node_end -  adds a new node at the end of a list_t
- * 
+ * add_node_end - adds a new node at the end of a list_t
+ *@head: Pointer to the pointer of the head of the list
+ *@str:String to be duplicated and added to the node
  * Return: address of the new element, or NULL
  */
 list_t *add_node_end(list_t **head, const char *str)
@@ -36,7 +37,7 @@ new_node = malloc(sizeof(list_t));
 	if (new_node->str == NULL)
 	{
 		free(new_node);
-		return(NULL);
+		return (NULL);
 	}
 	new_node->len = _strlen(str);
 	new_node->next = NULL;
@@ -48,8 +49,8 @@ new_node = malloc(sizeof(list_t));
 	}
 	temp = *head;
 	while (temp->next != NULL)
-		{	
-			temp = temp->next;
+		{
+		temp = temp->next;
 		}
 	temp->next = new_node;
 	return (new_node);
