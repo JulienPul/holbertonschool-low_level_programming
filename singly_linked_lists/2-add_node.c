@@ -1,4 +1,23 @@
 #include "lists.h"
+
+/**
+ * _strlen - Returns the length of a string
+ * @s: The string whose length is to be determined
+ *
+ * Return: Length of the string
+ */
+int _strlen(char *s)
+{
+	int len = 0;
+
+	while (s[len] != '\0')
+	{
+	len++;
+
+	}
+	return (len);
+}
+
 /**
  * add_node -  function that adds a new node at the beginning of a list_t
  * @head: Pointer to the pointer of the head of the list
