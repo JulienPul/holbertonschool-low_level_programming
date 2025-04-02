@@ -19,5 +19,6 @@ typedef struct dlistint_s
 } dlistint_t;
 
 size_t print_dlistint(const dlistint_t *h);
+size_t dlistint_len(const dlistint_t *h);
 
 #endif /* CEC31811_0AE2_4A46_8831_6D0016C1D61F */
