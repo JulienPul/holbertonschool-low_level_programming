@@ -1,3 +1,4 @@
+
 #include "main.h"
 #include <unistd.h>
 #include <fcntl.h>
@@ -12,9 +13,13 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
-	ssize_t rd, wr;
+	ssize_t rd;
+	ssize_t wr;
+	ssize_t total;
 	char buffer[1024];
 	size_t to_read;
+
+	total = 0;
 
 	if (filename == NULL)
 		return (0);
@@ -23,25 +28,34 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (fd == -1)
 		return (0);
 
-	if (letters > 1024)
-		to_read = 1024;
-	else
-		to_read = letters;
-
-	rd = read(fd, buffer, to_read);
-	if (rd == -1)
+	while (letters > 0)
 	{
-		close(fd);
-		return (0);
-	}
+		if (letters > 1024)
+			to_read = 1024;
+		else
+			to_read = letters;
 
-	wr = write(STDOUT_FILENO, buffer, rd);
-	if (wr == -1 || wr != rd)
-	{
-		close(fd);
-		return (0);
+		rd = read(fd, buffer, to_read);
+		if (rd == -1)
+		{
+			close(fd);
+			return (0);
+		}
+
+		if (rd == 0)
+			break;
+
+		wr = write(STDOUT_FILENO, buffer, rd);
+		if (wr == -1 || wr != rd)
+		{
+			close(fd);
+			return (0);
+		}
+
+		letters = letters - rd;
+		total = total + wr;
 	}
 
 	close(fd);
-	return (wr);
+	return (total);
 }
